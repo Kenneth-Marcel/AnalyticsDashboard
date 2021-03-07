@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Something Something</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <style>
+
+
+
+
+
+
+    .subbing {
+        padding: 0px;
+        text-align: ;
+        background: ;
+        color: #808080;
+        font-size: 15px;
+        font-family: cambria;
+            }
+
+    
+    .header1 {
+        padding: 30px;
+        text-align: ;
+        background: #FFFFF0;
+        color: #DC143C;
+        font-size: 15px;
+        font-family: cambria;
+            }
+    .header2 {
+        padding: 10px;
+        text-align: center;
+        background: #FFFFF0;
+        color: black;
+        font-size: 10px;
+        font-family: cambria;
+    }
+    .text1 {
+        padding: 0px;
+        text-align: ;
+        background: #FFFFF0;
+        color: black;
+        font-size: 15px;
+        font-family: cambria;
+            }
+    .text2 {
+        padding: 5px;
+        text-align: ;
+        background: #FFFFE0;
+        color: black;
+        font-size: 15px;
+        font-family: cambria;
+            }
+    .textnp {
+        padding: 0px;
+        text-align: ;
+        background: ;
+        color: black;
+        font-size: 15px;
+        font-family: cambria;
+            }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #FFFFF0;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="header1">
+  <div class="container text-center">
+     <span style="font-size: 65px"> Political Labs UK </span>
+     
+
+  </div>
+  <hr>
+</div>
+
+<div class="header2 text-center">
+          <div class="jumbotron header2">
+           
+
+            <div class="container text-center">
+
+              <h2 style="font-size: 40px"> Man found having tea party with monkey again </h2>
+            
+          </div>
+          
+          </div>
+
+            
+            </div>
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-6 sidenav hidden-xs">
+      <div class="container-fluid">
+        
+      </div>
+      <div class="container-fluid">
+        
+        
+
+      </div>
+        <div class="col-sm-2" >
+        </div>
+        <div class="col-sm-10">
+          <div class="well text2">
+                  
+                        <div class="container-fluid">
+                          <div class="col-sm-1">
+                          </div>
+                          <div class="col-sm-5">
+                            
+                              
+
+                          </div>
+                          <div class="col-sm-6">
+                          </div>    
+                        </div>
+            
+                  
+            
+              <div id="chart_div" style="width: 1600px; height: 400px;"></div>
+          
+        </div>
+          </div>
+
+    </div>
+  
+    
+    <div class="col-sm-6 sidenav">
+      <div class="col-sm-10">
+        
+              <div class="well text1">
+                       <div class="row">
+                            <div class="col-sm-4 text1">
+                              <div class="well text2">
+                                <h4>Average population</h4>
+                                <h2>{{ aa }}</h2> 
+                              </div>
+                            </div>
+                            <div class="col-sm-4 text1">
+                              <div class="well text2">
+                                <h4>corr</h4>
+                                <h2> {{ ab }}</h2> 
+                              </div>
+                            </div>
+                            <div class="col-sm-4 text1">
+                              <div class="well text2">
+                                <h4>R-squared</h4>
+                                <h2> 0.97</h2> 
+                              </div>
+                            </div>
+                  
+                  </div>
+                </div>
+                <div class="text1">
+                <p> Norway has an extensive coastline, facing the North Atlantic Ocean and the Barents Sea.Norway has a total area of 385,252 square kilometres and a population of 5,213,985 (May 2016). The country shares a long eastern border with Sweden. Norway is bordered by Finland and Russia to the north-east, and the Skagerrak Strait to the south, with Denmark on the other side. Norway has an extensive coastline, facing the North Atlantic Ocean and the Barents Sea. Norway has a total area of 385,252 square kilometres and a population of 5,213,985 (May 2016). The country shares a long eastern border with Sweden. Norway is bordered by Finland and Russia to the north-east, and the Skagerrak Strait to the south, with Denmark on the other side. Norway has an extensive coastline, facing the North Atlantic Ocean and the Barents Sea. Skagerrak Strait to the south, with Denmark on the other side. Norway has an extensive coastline, facing the North Atlantic Ocean and the Barents Sea. Norway has a total area of 385,252 square kilometres and a population of 5,213,985 (May 2016). The country shares a long eastern border with Sweden. Norway is bordered by Finland and Russia to the north-east, and the Skagerrak Strait to the south, with Denmark on the other side. Norway has an extensive coastline, facing the North Atlantic Ocean and the Barents Sea.</p>
+          </div>
+          
+        </div>
+        <div class="col-sm-2">
+        </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Population',
+            backgroundColor: '#6495ED',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [15, 10, 5, 2, 20, 30, 45],
+            legend: false
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+           ['Age', 'Weight'],
+           [2381.7, 40.6],
+           [1246.7, 28.8],
+           [114.8, 10.9],
+           [581.7, 2.3],
+           [274.2, 18.6],
+           [27.8, 10.5],
+           [4.0, 0.5],
+           [475.4, 23.4],
+           [623.0, 4.6],
+           [1284.0, 14.5],
+           [1.9, 0.8],
+           [2344.9, 78.7],
+           [342.0, 5.1],
+           [322.5, 23.7],
+           [23.2, 0.9],
+           [1001.5, 95.7],
+           [28.1, 1.2],
+           [1104.3, 102.4],
+           [267.7, 2.0],
+           [11.3, 2.0],
+           [238.5, 28.2],
+           [245.9, 12.4],
+           [36.1, 1.8],
+           [580.4, 48.5],
+           [30.4, 2.2],
+           [111.4, 4.6],
+           [1759.5, 6.3],
+           [587.3, 24.9],
+           [118.5, 18.1],
+           [1240.2, 18.0],
+           [1030.7, 4.3],
+           [2.0, 1.3],
+           [446.6, 35.3],
+           [799.4, 28.8],
+           [824.3, 2.5],
+           [1267.0, 20.7],
+           [923.8, 186.0],
+           [26.3, 11.9],
+           [1.0, 0.2],
+           [196.7, 15.4],
+           [0.5, 0.1],
+           [72.3, 7.4],
+           [637.7, 14.3],
+           [1219.1, 55.9],
+           [644.3, 12.2],
+           [1879.4, 39.6],
+           [17.4, 1.3],
+           [947.3, 55.6],
+           [56.8, 7.6],
+           [163.6, 11.4],
+           [241.6, 41.5],
+           [752.6, 16.6],
+           [390.8, 16.2]
+          ]);
+
+        var options = {
+          trendlines: { 0: {
+            color: '#4169E1',
+            lineWidth: 5,
+            opacity: 0.3,
+          } },
+          chartArea: {
+            left: 110,
+            top: 30,
+            width: 550,
+            height: 320
+          },
+          fontName: 'cambria',
+          fontSize: 20,
+          dataOpacity: 0.75,
+          colors: ['#4169E1'],
+          backgroundColor: '',
+          pointSize: 2,
+          title: 'Tea Population',
+          titleTextStyle: { color:'black', bold:false,},
+          fontColor: 'blue',
+          pointShape: 'circle',
+          
+
+
+          hAxis: {
+
+            title: 'variable population', 
+            minValue: 0,
+            maxValue: 15, 
+            baselineColor: 'white', 
+            minorGridlines: {color:'#D3D3D3'},
+
+            gridlines: {
+              color:'#D3D3D3',
+              count:0,
+              minSpacing: 20,
+              
+            },
+            ticks: [{v:0, f:'0'}, {v:250, f:''},{v:500, f:''}, {v:750, f:''},{v:1000, f:'1000'}, {v:1250, f:''}, {v:1500, f:''}, {v:1750, f:''}, {v:2000, f:'2000'}, {v:2250, f:''}],
+
+            
+            
+            
+
+          },
+          
+          vAxis: {
+
+            title: 'variable squard kilometres', 
+            minValue: 0, 
+            maxValue: 15,
+            baselineColor: '#D3D3D3',
+            minorGridlines: {color:'#D3D3D3'} , 
+            gridlines: {
+              color:'#D3D3D3',
+              minSpacing: 10,
+              count: 0
+            },
+            ticks: [{v:0, f:'0'},{v:25, f:''},{v:50, f:''},{v:75, f:''},{v:100, f:'100'},{v:125, f:''},{v:150, f:''},{v:175, f:''},{v:200, f:'200'}]
+
+          },
+          
+          legend: 'none'
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
